@@ -1,0 +1,6 @@
+name: Lookup
+author : Pasindu Perera
+description : SMS based directory for organizations in Sri Lanka.
+url : http://lookup.ideawide.com
+markdown: redcarpet
+pygments: true

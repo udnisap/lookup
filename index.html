@@ -1,0 +1,227 @@
+---
+layout: default
+title: Dictonary at your fingertips
+---
+
+
+<!-- Home Page -->
+<div id="home" class="page color-1">
+    <div class="inner-page">
+        <h2 class="page-headline large">Find contact details of organizations</h2>
+    </div>
+    <div class="row inner-page">
+        <div class="col-md-3 col-md-push-8 lazy-container">
+            <!--<h3>Introducing Lookup!</h3>-->
+            <img class="lazy" alt="Looks great on every device" src="img/pixel.png" data-original="img/home.png" />
+        </div>
+        <div class="col-md-7 col-md-pull-3">
+            <ul class="big-list">
+                <li><i class="icon-building"></i> 19,000+ Entries</li>
+                <li><i class="icon-hospital"></i> 1,000+ Health Institutes</li>
+                <li><i class="icon-heart"></i> 1,000+ Hotels</li>
+                <li><i class="icon-road"></i> In all districts</li>
+            </ul>
+            <br />
+            <a href="#tryit" title="Try it online!" class="scroll btn btn-primary btn-centered"><i class="icon-magic"></i> Try it!</a>
+        </div>
+    </div>
+    <!-- Sign up -->
+    <div class="sign-up color-2 visible-lg">
+        <div class="row inner-page">
+            <div class="col-md-12">
+                <h4 class="pull-left">Would you like to register your business? <strong>Its Free!!</strong></h4>
+                <a href="#reg" class="scroll btn btn-primary pull-right" title="Register your company!"><i class="icon-caret-down"></i> Register Now</a>
+            </div>
+        </div>
+    </div> <!-- /.sign-up -->
+</div> <!-- /#home -->
+
+<!-- Feature page-->
+<div id="what" class="page color-4">
+    <div class="inner-page">
+        <h2 class="page-headline">What is <strong>Lookup</strong>?</h2>
+    </div>
+    <div class="inner-page row">
+        <p class="lead text-center">
+            <strong>Lookup</strong> is a <span class="text-info">SMS</span> based search engine for organizations in Sri Lanka. It can provide <i class="text-danger">address, contact no, websites and much more</i> of organizations including private and public sector.
+        </p>
+    </div>   
+
+    <div class="inner-page">
+        <h2 class="page-headline">Why <strong>Lookup</strong> is good?</h2>
+    </div>
+
+    <div class="inner-page row">
+        <ul class="features list-inline">
+            <li>
+                <h3><i class="icon-paper-clip"></i> Just Answers</h3>
+                <p>SMS the <strong>name</strong> of the organization to look up. Optionally the <strong>location</strong>.</p>
+            </li>
+            <li>
+                <h3><i class="icon-spinner"></i> Fast</h3>
+                <p>Faster than searching in <strong>Google</strong>. Try a query below.</p>
+
+            </li>
+            <li>
+                <h3><i class="icon-money"></i> Cheap</h3>
+                <p> Costs only 2 Toffees. Just <code>Rs. 2.00</code> per query.</p>
+            </li>
+            <li>
+                <h3><i class="icon-mobile-phone"></i> Any device.</h3>
+                <p>Only <strong>you</strong> needs to be smart. Works with any Dialog mobile phone.</p>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="inner-page">
+        <h2 class="page-headline">Coverage</h2>
+    </div>
+
+    <div class="inner-page row">
+        <div class="col-md-3">
+            <ul>
+                <li>sdsd</li>
+                <li>sdsd</li>
+                <li>sdsd</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <li>sdsd</li>
+                <li>sdsd</li>
+                <li>sdsd</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+
+
+</div> <!-- /#features -->
+
+<!-- Tryit page -->
+<div  id="tryit" class="page color-3">
+    <div class="inner-page">
+        <h2 class="page-headline">Try it Free!</h2>
+    </div>
+
+
+    <div class="row inner-page">
+        <div class="col-md-offset-1 col-md-10" data-bind='foreach:list'>
+            <div class="alert alert-info col-md-10"><i class="icon-caret-right"></i> <span data-bind='text:q'>Abanse Colombo</span></div>
+            <div class="alert alert-success text-right col-md-10 col-md-offset-2" >
+                <span data-bind='text:a'></span>>
+                <i class="icon-caret-left"></i></div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- Try it -->
+    <div class="newsletter color-2">
+        <div class="inner-page row">
+            <div class="col-md-4">
+                <h4>
+                    <strong>Type in</strong>, a query and click send!</h4>
+            </div>
+            <div class="col-md-5">
+                <input type="search" data-bind="value:q, valueUpdate:'afterkeydown'" placeholder="lookup" name="query" class="subscribe">
+            </div>
+            <div class="col-md-2">
+                <button type="submit" data-bind='click : send, css: {"disabled" : q().length === 0 } ' class="btn btn-primary pull-right btn-block">Send</button>
+            </div>
+            <div class="col-md-1">
+                <button type="submit" class="btn btn-danger pull-right btn-block" data-toggle="modal" data-target="#getLookUp">Get it</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div id='reg' class="page color-5">
+    <div class="inner-page">
+        <h2 class="page-headline">Company is not listed in <strong>Lookup</strong>?</h2>
+    </div>
+    <div class="row inner-page contact">
+        <div class="col-md-10 col-md-offset-1">
+            <h3>Get Registered now! <small>Its Free!!!</small></h3>
+            <form id="contact-form">
+                <input type="text" class="form-control" placeholder="Company Name">
+                <textarea rows="6" class="form-control" placeholder="Company Details"></textarea>
+                <button class="btn btn-primary btn-centered">Register</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Contact page -->
+<div id="contact" class="page color-2">
+    <div class="inner-page">
+        <h2 class="page-headline">Let us know what you think</h2>
+    </div>
+    <div class="row inner-page contact">
+        <h3>What's on your mind?</h3>
+        <form id="contact-form">
+            <textarea rows="6" class="form-control" placeholder="Your story"></textarea>
+            <input type="text" class="form-control" placeholder="your@e-mail.com">
+            <input type="text" class="form-control" placeholder="Name">
+            <button class="btn btn-primary btn-centered">Contact us</button>
+        </form>
+    </div>
+</div> <!-- /#contact -->
+
+
+<div class="modal fade" id="getLookUp" tabindex="-1" role="dialog" aria-labelledby="getLookUpLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="getLookUpLabel" >Get <strong>Lookup</strong></h4>
+            </div>
+            <div class="modal-body">
+                <p>To use <strong>Lookup</strong> on your mobile, Simply send <code>lookup </code> to <code>77100</code> from any Dialog mobile.</p>
+                <p class="text-danger">You are only changed when we find a match to the your query. If a possible match is not found, you will not be charged for the service.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script src="js/ko.js"></script>
+<script>
+    VM = function() {
+        var q = ko.observable(""),
+                list = ko.observableArray([
+            {q: "Abanse", a: "Colombo 2"},
+            {
+                'a': 'Colombo-02 Tel : 0112304632 email : webmaster@caa.lk , info@caa.lk Web : www.caa.lk',
+                'q': 'Coconut Development Authority'
+            }
+        ]);
+        var send = function() {
+            $.get('test.json', {
+                q: q()
+            }, function(data) {
+                console.log(data)
+                list.push(data);
+                q("");
+            });
+        };
+
+        return {
+            list: list,
+            q: q,
+            send: send
+        };
+    }();
+
+    ko.applyBindings(VM);
+</script>
